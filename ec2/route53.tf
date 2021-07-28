@@ -3,5 +3,5 @@ resource "aws_route53_record" "wordpress" {
   name    = "wordpress.bermet.net"
   type    = "A"
   ttl     = "60"
-  records = ["127.0.0.1"]
+  records = [aws_instance.web.public_ip]
 }

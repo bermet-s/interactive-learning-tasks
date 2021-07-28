@@ -1,5 +1,5 @@
 output "az" {
-  value = aws_instance.web[0].availability_zone
+  value = aws_instance.web.availability_zone
 }
 
 output "public_ip" {
@@ -7,7 +7,7 @@ output "public_ip" {
 }
 
 output "instance_id" {
-  value = aws_instance.web.instance_id
+  value = aws_instance.web.id
 }
 
 output "region" {
