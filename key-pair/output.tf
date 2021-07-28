@@ -4,9 +4,9 @@ output "region" {
 
 output "key_name" {
   value = "ilearning-wordpress"
-}
+  }
 
 output "key_id" {
-  value = "~/.ssh/id_rsa.pub"
+  value = "key-0e369965d651c2d0c"
 }
 
