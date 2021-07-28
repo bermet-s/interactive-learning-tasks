@@ -1,5 +1,5 @@
-resource "aws_key_pair" "wordpress" {
+resource "aws_key_pair" "ilearning-wordpress" {
   key_name   = "ilearning-wordpress"
-  public_key = "~/.ssh/id_rsa.pub"
+  public_key = file("~/.ssh/id_rsa.pub")
   region  = "us-east-2"
 }
