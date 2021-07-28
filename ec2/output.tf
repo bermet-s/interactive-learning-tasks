@@ -1,13 +1,13 @@
-output "availability_zone" {
-  value = "us-east-1a"
+output "az" {
+  value = aws_instance.web[0].availability_zone
 }
 
 output "public_ip" {
-  value = "aws_instance.public_ip"
+  value = aws_instance.web.public_ip
 }
 
 output "instance_id" {
-  value = "aws_instance.instance_id"
+  value = aws_instance.web.instance_id
 }
 
 output "region" {
