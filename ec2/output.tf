@@ -10,3 +10,6 @@ output "instance_id" {
   value = "aws_instance.instance_id"
 }
 
+output "region" {
+  value = "us-east-1"
+}
