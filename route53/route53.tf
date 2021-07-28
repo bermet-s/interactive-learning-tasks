@@ -3,5 +3,5 @@ resource "aws_route53_record" "blog" {
   name    = "blog.bermet.net"
   type    = "A"
   ttl     = "60"
-  records = "127.0.0.1"
+  records = ["127.0.0.1"]
 }
